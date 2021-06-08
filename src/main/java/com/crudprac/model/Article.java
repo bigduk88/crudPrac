@@ -38,4 +38,11 @@ public class Article {
         this.author = author;
         this.contents = contents;
     }
+
+    public void update(ArticleRequestDto requestDto) {
+        this.title = requestDto.getTitle();
+        this.author = requestDto.getAuthor();
+        this.contents = requestDto.getContents();
+    }
+
 }
